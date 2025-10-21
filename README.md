@@ -30,12 +30,23 @@ Below, we've provided an outline for your response but feel free to modify it as
 
 ### Response
 
-[Replace with your explanation of the concept with an analogy]
+According to MDN Docs, a function is a reusable block of code designed to perform a particular task. You can define it once and then call it whenever you need it.
+
+You can think of a function like a vending machine, you give an input, some cash and a snacks code, and recieve an output, the snack. Functions do exactly the same, they take an input, parameters, then do something internally, and gives us an output.
 
 Check out this example:
 
 ```js
-// Add your example here
+const addNumbers = (a, b) => {
+  return a + b;
+};
+
+console.log(addNumbers(3, 5)); // Output: 8
 ```
 
-[Replace with your explanation of the example and explanation of the syntax]
+* const addNumbers = (a,b) => {...} is an **arrow function** named addNumbers, whose purpose is to add the two numbers we give it.
+* The (a,b) part are the **parameters** or what we input into the function.
+* The { return a + b; } is the **code block**  which is the instructions in the function that the computer uses to compute what we need or want.
+* The **return** is a statement that sends anything after it, in this case the a + b;, back to where it was called.
+* **console.log** is a statement that sends anything in it, in this case addNumbers(3,5), to the terminal for us to be able view the result.
+* addNumbers(3, 5) is the **function call**, its how we run the function using the parameters 3, and 5.
